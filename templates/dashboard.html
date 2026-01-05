@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARK Stealth | Xbox 360</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --tethered-purple: #800080;
+            --dark-bg: #0a0a0a;
+            --card-bg: #151515;
+            --text-main: #ffffff;
+            --accent-color: #bf00bf;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: rgba(0,0,0,0.8) !important;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--tethered-purple);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: var(--tethered-purple) !important;
+        }
+
+        .hero-section {
+            padding: 80px 0;
+            background: linear-gradient(180deg, rgba(128,0,128,0.1) 0%, rgba(10,10,10,1) 100%);
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(128, 0, 128, 0.5);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #888;
+            margin-bottom: 40px;
+        }
+
+        .btn-purple {
+            background-color: var(--tethered-purple);
+            color: white;
+            border: none;
+            padding: 12px 35px;
+            font-weight: bold;
+            border-radius: 50px;
+            margin: 10px;
+            transition: 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-purple:hover {
+            background-color: var(--accent-color);
+            box-shadow: 0 0 30px rgba(128, 0, 128, 0.8);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .pricing-card {
+            background-color: var(--card-bg);
+            border: 1px solid #222;
+            border-radius: 15px;
+            padding: 40px 25px;
+            transition: 0.4s;
+            height: 100%;
+        }
+
+        .pricing-card:hover {
+            border-color: var(--tethered-purple);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+
+        .pricing-card h4 {
+            color: var(--tethered-purple);
+            font-weight: 800;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin-bottom: 35px;
+        }
+
+        .features-list li {
+            margin-bottom: 12px;
+            color: #bbb;
+            display: flex;
+            align-items: center;
+        }
+
+        .features-list li::before {
+            content: "✦";
+            color: var(--tethered-purple);
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .admin-section {
+            background-color: #0f0f0f;
+            padding: 60px 20px;
+            margin-top: 80px;
+            border-top: 1px solid #222;
+        }
+
+        .table-dark {
+            background-color: #151515;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .status-online {
+            color: #00ff00;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(0,255,0,0.3);
+        }
+
+        .badge-pro {
+            background-color: var(--tethered-purple);
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">DARK STEALTH</a>
+            <div class="ms-auto">
+                <span class="status-online">● SERVER ONLINE</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">DARK PRO</h1>
+            <p class="hero-subtitle">A melhor experiência Stealth para seu Xbox 360 | Estilo Thenred Roxo</p>
+            
+            <div>
+                <a href="#" class="btn-purple">Download Files</a>
+                <a href="#" class="btn-purple">Discord</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="pricing-card">
+                    <h4>LITEMODE</h4>
+                    <div class="price">FREE</div>
+                    <ul class="features-list">
+                        <li>Conexão Xbox Live</li>
+                        <li>Gold & MSP Spoof</li>
+                        <li>Bypass de Banimento</li>
+                        <li>Estabilidade 24/7</li>
+                    </ul>
+                    <button class="btn-purple w-100">Download</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="pricing-card" style="border: 2px solid var(--tethered-purple);">
+                    <h4>PRO EDITION</h4>
+                    <div class="price">FREE</div>
+                    <ul class="features-list">
+                        <li>Tudo do Litemode</li>
+                        <li>No KV Mode Ativo</li>
+                        <li>Interface Thenred Roxa</li>
+                        <li>Suporte Prioritário</li>
+                    </ul>
+                    <button class="btn-purple w-100">Ativar Agora</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="admin-section">
+            <h2 class="mb-5" style="color: var(--tethered-purple);">Painel de Controle</h2>
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <div class="pricing-card py-4">
+                        <div class="h1 mb-0">{{ consoles|length }}</div>
+                        <div class="text-muted">Consoles Conectados</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-card py-4">
+                        <div class="h1 mb-0" style="color: #00ff00;">Ativo</div>
+                        <div class="text-muted">Status do Servidor</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-card py-4">
+                        <div class="h1 mb-0">v{{ settings.version }}</div>
+                        <div class="text-muted">Versão Atual</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-dark table-hover align-middle">
+                    <thead>
+                        <tr>
+                            <th>Console</th>
+                            <th>CPU Key</th>
+                            <th>Último Acesso</th>
+                            <th>Status</th>
+                            <th>Modo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for cpukey, data in consoles.items() %}
+                        <tr>
+                            <td>{{ data.name }}</td>
+                            <td><code>{{ cpukey[:16] }}...</code></td>
+                            <td>{{ data.last_seen }}</td>
+                            <td><span class="status-online">Online</span></td>
+                            <td><span class="badge-pro">PRO</span></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-5 text-muted">
+        DARK STEALTH &copy; 2026 | Desenvolvido para Vtgamer998
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

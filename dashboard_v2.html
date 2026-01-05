@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tethered Live | 17559</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --tethered-purple: #800080;
+            --dark-bg: #121212;
+            --card-bg: #1e1e1e;
+            --text-main: #ffffff;
+            --accent-color: #9d009d;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+            background-image: url('https://tethered.live/assets/img/bg.png'); /* Tenta carregar o fundo original */
+            background-repeat: repeat;
+            color: var(--text-main);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: transparent !important;
+            padding: 20px 0;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: white !important;
+        }
+
+        .hero-section {
+            padding: 60px 0;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #aaa;
+            margin-bottom: 40px;
+        }
+
+        .btn-download {
+            background-color: var(--tethered-purple);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 10px;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .btn-download:hover {
+            background-color: var(--accent-color);
+            box-shadow: 0 0 20px rgba(128, 0, 128, 0.6);
+            color: white;
+        }
+
+        .pricing-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .pricing-card {
+            background-color: var(--card-bg);
+            border: 1px solid #333;
+            border-radius: 10px;
+            width: 280px;
+            padding: 30px 20px;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--tethered-purple);
+        }
+
+        .pricing-card h4 {
+            color: var(--tethered-purple);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+
+        .features-list li {
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            color: var(--tethered-purple);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .btn-buy {
+            background-color: var(--tethered-purple);
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .admin-section {
+            background-color: rgba(0,0,0,0.5);
+            padding: 40px;
+            margin-top: 50px;
+            border-top: 2px solid var(--tethered-purple);
+        }
+
+        .table-dark {
+            background-color: transparent;
+        }
+
+        .status-badge {
+            background-color: #00ff00;
+            color: black;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://tethered.live/assets/img/logo.png" alt="" width="40" class="me-2">
+                Tethered Live
+            </a>
+            <div class="ms-auto">
+                <span class="status-badge">ONLINE</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <h1 class="hero-title">Tethered Live</h1>
+        <p class="hero-subtitle">Running for 6+ years and counting | Kernel 2.0.17559.0</p>
+        
+        <div>
+            <button class="btn-download">Download Files</button>
+            <button class="btn-download">Download XeBuild</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="pricing-container">
+            <!-- Litemode (PRO GRATUITO) -->
+            <div class="pricing-card">
+                <h4>Litemode</h4>
+                <div class="price">FREE</div>
+                <ul class="features-list">
+                    <li>Long Lasting KV Life</li>
+                    <li>Gold & MSP Spoofing</li>
+                    <li>Perfect Bypasses</li>
+                    <li>HDD/USB/INTMU Support</li>
+                    <li>Wired/WiFi Support</li>
+                    <li>Menu Library</li>
+                    <li>100% Stable & Reliable</li>
+                    <li>No KV Mode</li>
+                </ul>
+                <button class="btn-buy">DOWNLOAD</button>
+            </div>
+
+            <!-- PRO Mode -->
+            <div class="pricing-card" style="border: 2px solid var(--tethered-purple);">
+                <h4>PRO MODE</h4>
+                <div class="price">FREE</div>
+                <ul class="features-list">
+                    <li>All Litemode Features</li>
+                    <li>Quick Launch</li>
+                    <li>Customizable UI</li>
+                    <li>Party Features</li>
+                    <li>Internet Explorer Support</li>
+                    <li>Automatic Delivery</li>
+                    <li>Priority Support</li>
+                </ul>
+                <button class="btn-buy">ACTIVE NOW</button>
+            </div>
+        </div>
+
+        <!-- ADMIN PANEL INTEGRADO -->
+        <div class="admin-section">
+            <h3 style="color: var(--tethered-purple); margin-bottom: 30px;">Admin Dashboard</h3>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="pricing-card" style="width: 100%; padding: 20px;">
+                        <div style="font-size: 2rem; color: var(--tethered-purple);">{{ consoles|length }}</div>
+                        <div style="color: #888;">Consoles Online</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-card" style="width: 100%; padding: 20px;">
+                        <div style="font-size: 2rem; color: #00ff00;">Ativo</div>
+                        <div style="color: #888;">Status Global</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-card" style="width: 100%; padding: 20px;">
+                        <div style="font-size: 2rem; color: var(--tethered-purple);">v{{ settings.version }}</div>
+                        <div style="color: #888;">Versão PRO</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th>Console</th>
+                            <th>CPU Key</th>
+                            <th>Last Seen</th>
+                            <th>Status</th>
+                            <th>Mode</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for cpukey, data in consoles.items() %}
+                        <tr>
+                            <td>{{ data.name }}</td>
+                            <td><code>{{ cpukey[:16] }}...</code></td>
+                            <td>{{ data.last_seen }}</td>
+                            <td><span style="color: #00ff00;">● Online</span></td>
+                            <td><span class="badge bg-purple" style="background-color: var(--tethered-purple);">PRO</span></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer style="padding: 40px; color: #555;">
+        Tethered Live © 2026 | Custom Purple Edition
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
